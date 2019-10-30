@@ -1,0 +1,15 @@
+image:
+  file: dockerfile  
+workspaceLocation: "."
+tasks:
+  - init:  echo 'Welcome to Kali Linux Dev Environment'
+    command: echo ""      
+ports:
+  - port: 8000
+    onOpen: open-preview    
+  - port: 4200
+    onOpen: open-preview
+  - port: 8080
+    onOpen: open-preview
+  - port: 4400
+    onOpen: open-preview
